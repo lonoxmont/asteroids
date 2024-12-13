@@ -21,6 +21,7 @@ def main():
         screen.fill((0, 0, 0))
         delay = clock.tick(60)
         dt = delay / 1000
+        player1.update(dt)
         player1.draw(screen)
         pygame.display.flip()
 
